@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Lovely Sweet</title>
+</head>
+
+<body>
+    <header>
+        <div class="imagem">
+            <video src="style/7034157-uhd_3840_2160_25fps.mp4" autoplay loop muted></video>
+        </div>
+        <div class="cart" id="cart">
+            <button class="cart-button" id="cartButton" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cartCount">0</span>
+            </button>
+            <div class="cart-dropdown" id="cartDropdown" aria-hidden="true">
+                <ul class="cart-items" id="cartItems">
+                </ul>
+                <div class="cart-footer">
+                    <div class="cart-total">Total: R$ <span id="cartTotal">0.00</span></div>
+                    <div class="cart-actions">
+                        <button id="clearCartBtn">Limpar</button>
+                        <button id="checkoutBtn">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="store-status" id="storeStatus">
+            <span class="status-indicator" id="statusIndicator"></span>
+            <span class="status-text" id="statusText"></span>
+        </div>
+        <div class="container">
+            <h1>Lovely Sweet</h1>
+            <h3>Donuts artesanais feitos com amor todos os dias</h3>
+            <a href="#secao"><button>Cardápio</button></a>
+        </div>
+    </header>
+    <section>
+        <div class="section">
+            <h2 id="secao">Nossos Sabores</h2>
+            <p>Descubra nossa seleção especial de donuts artesanais, feitos fresquinhos todos os dias!</p>
+        </div>
+    </section>
+    <section class="section2">
+        <div>
+            <a href="pageClassic.html">
+                <div class="box1">
+                    <div class="img">
+                        <img src="style/1 donuts card.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <h4>Donut Clássico</h4>
+                        <p>Delicioso donut tradicional com cobertura de chocolate.</p>
+                        <div class="info-actions">
+                            <button class="add-to-cart" data-name="Donut Clássico" data-price="8.50" data-img="style/1 donuts card.jpg">Adicionar</button>
+                            <span>R$ 8,50</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="branco.html">
+                <div class="box1">
+                    <div class="img">
+                        <img src="style/CHOCOLATE BRANCO.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <h4>Chocolate branco</h4>
+                        <p>Delicioso donut com cobertura de chocolate branco.</p>
+                        <div class="info-actions">
+                            <button class="add-to-cart" data-name="Chocolate branco" data-price="8.50" data-img="style/CHOCOLATE BRANCO.jpg">Adicionar</button>
+                            <span>R$ 8,50</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="redvelvet.html">
+                <div class="box1">
+                    <div class="img">
+                        <img src="style/redvelvet.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <h4>Redvelvet</h4>
+                        <p>Red Velvet irresistível em cada mordida</p>
+                        <div class="info-actions">
+                            <button class="add-to-cart" data-name="Redvelvet" data-price="8.50" data-img="style/redvelvet.jpg">Adicionar</button>
+                            <span>R$ 8,50</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="brigadeirao.html">
+                <div class="box1">
+                    <div class="img">
+                        <img src="style/brigadeirão.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <h4>Brigadeirão</h4>
+                        <p>O clássico que derrete corações.</p>
+                        <div class="info-actions">
+                            <button class="add-to-cart" data-name="Brigadeirão" data-price="8.50" data-img="style/brigadeirão.jpg">Adicionar</button>
+                            <span>R$ 8,50</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="ninho.html">
+                <div class="box1">
+                    <div class="img">
+                        <img src="style/Ninho.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <h4>Ninho</h4>
+                        <p>Sabor suave que conquista</p>
+                        <div class="info-actions">
+                            <button class="add-to-cart" data-name="Ninho" data-price="8.50" data-img="style/Ninho.jpg">Adicionar</button>
+                            <span>R$ 8,50</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="churros.html">
+                <div class="box1">
+                    <div class="img">
+                        <img src="style/churros.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <h4>Churros</h4>
+                        <p>Churros quentinhos, recheio generoso, amor em cada mordida.</p>
+                        <div class="info-actions">
+                            <button class="add-to-cart" data-name="Churros" data-price="8.50" data-img="style/churros.jpg">Adicionar</button>
+                            <span>R$ 8,50</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="sec3">
+        <h1>Sobre Nós</h1>
+        <p>
+            Na Lovely Sweet, cada donut é uma obra de arte feita com ingredientes selecionados e muito carinho. Nossa
+            receita secreta, desenvolvida ao longo de anos, garante a maciez perfeita e sabores inesquecíveis.
+
+            Produzimos diariamente para garantir a qualidade e frescor que nossos clientes merecem. Visite-nos e
+            experimente a diferença de um donut verdadeiramente artesanal!
+        </p>
+    </section>
+
+    <section class="sec4">
+        <h1>Entre em contato</h1>
+        <div class="container2">
+            <div class="adress">
+                <div>
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Telefone</h4>
+                    </div>
+                    <div class="info2">
+                        <p>(85) 8547-6951</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                    </div>
+                    <div class="info2">
+                        <p>isabella44k@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="function">
+                <h4>Horários de funcionamentos</h4>
+                <p>Segunda a Sexta: 08:00 - 18:00</p>
+                <p>Sábado: 09:00 - 18:00</p>
+
+                <div class="sociais">
+                    <h4>Redes Sociais</h4>
+                    <div class="logo">
+                        <a href="https://www.instagram.com/lovelly_sweet_?utm_source=qr&igsh=MThsaXhoODRvcmFyYQ=="><i
+                                class="fa-brands fa-instagram" href=""></i></a>
+                        <a href="https://wa.me/5585985476951" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h4>Lovely Sweet</h4>
+        <p>© 2025 Lovely Sweet. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
