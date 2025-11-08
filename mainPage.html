@@ -60,7 +60,7 @@
                         <p>Delicioso donut tradicional com cobertura de chocolate.</p>
                         <div class="info-actions">
                             <button class="add-to-cart" data-name="Donut Clássico" data-price="8.50" data-img="style/1 donuts card.jpg">Adicionar</button>
-                            <span>R$ 8,50</span>
+                            <span>R$ 12,00</span>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         <p>Delicioso donut com cobertura de chocolate branco.</p>
                         <div class="info-actions">
                             <button class="add-to-cart" data-name="Chocolate branco" data-price="8.50" data-img="style/CHOCOLATE BRANCO.jpg">Adicionar</button>
-                            <span>R$ 8,50</span>
+                            <span>R$ 13,50</span>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                         <p>Red Velvet irresistível em cada mordida</p>
                         <div class="info-actions">
                             <button class="add-to-cart" data-name="Redvelvet" data-price="8.50" data-img="style/redvelvet.jpg">Adicionar</button>
-                            <span>R$ 8,50</span>
+                            <span>R$ 15,00</span>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                         <p>O clássico que derrete corações.</p>
                         <div class="info-actions">
                             <button class="add-to-cart" data-name="Brigadeirão" data-price="8.50" data-img="style/brigadeirão.jpg">Adicionar</button>
-                            <span>R$ 8,50</span>
+                            <span>R$ 10,50</span>
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                         <p>Sabor suave que conquista</p>
                         <div class="info-actions">
                             <button class="add-to-cart" data-name="Ninho" data-price="8.50" data-img="style/Ninho.jpg">Adicionar</button>
-                            <span>R$ 8,50</span>
+                            <span>R$ 15,00</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                         <p>Churros quentinhos, recheio generoso, amor em cada mordida.</p>
                         <div class="info-actions">
                             <button class="add-to-cart" data-name="Churros" data-price="8.50" data-img="style/churros.jpg">Adicionar</button>
-                            <span>R$ 8,50</span>
+                            <span>R$ 12,00</span>
                         </div>
                     </div>
                 </div>
@@ -216,6 +216,36 @@
         <h4>Lovely Sweet</h4>
         <p>© 2025 Lovely Sweet. Todos os direitos reservados.</p>
     </footer>
+    <!-- Checkout modal -->
+    <div id="checkoutModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal">
+            <button class="modal-close" id="checkoutClose" aria-label="Fechar">&times;</button>
+            <h2>Finalizar Pedido</h2>
+            <form id="checkoutForm">
+                <div class="form-row">
+                    <label for="custName">Nome <span class="required">*</span></label>
+                    <input type="text" id="custName" name="custName" required placeholder="Seu nome">
+                </div>
+                <div class="form-row">
+                    <label for="custPhone">Telefone</label>
+                    <input type="tel" id="custPhone" name="custPhone" placeholder="(85) 99999-9999">
+                </div>
+                <div class="form-row">
+                    <label for="custAddress">Endereço <span class="required">*</span></label>
+                    <textarea id="custAddress" name="custAddress" rows="2" required placeholder="Rua, número, bairro, complemento..."></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="custNotes">Observações</label>
+                    <textarea id="custNotes" name="custNotes" rows="2" placeholder="Observações (opcional)"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="checkoutSubmit" class="purchaseButton">Enviar via WhatsApp</button>
+                    <button type="button" id="checkoutCancel" class="homeButton">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
